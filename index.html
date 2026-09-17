@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өсөхбаяр - Товч CV & Танилцуулга</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #1e3c72;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #2a5298;
+            font-weight: bold;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+        }
+        .card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 5px;
+            color: #1e3c72;
+        }
+        a.btn {
+            display: inline-block;
+            background-color: #2a5298;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        a.btn:hover {
+            background-color: #1e3c72;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8fafc;
+            border-top: 1px solid #eef2f5;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Тэргүүн хэсэг / Header -->
+        <header>
+            <h1>Өсөхбаяр</h1>
+            <p>Программ хангамжийн хөгжүүлэгч / Мэдээллийн технологийн суралцагч</p>
+        </header>
+
+        <!-- Үндсэн агуулга / Main Content -->
+        <div class="content">
+            
+            <!-- Танилцуулга -->
+            <section>
+                <h2>Миний тухай</h2>
+                <p>Намайг Өсөхбаяр гэдэг. ШУТИС-ийн Мэдээлэл, Холбооны Технологийн Сургуулийн 2-р суралцагч. Би програмчлалын үндсэн аргууд, систем хөгжүүлэлт болон орчин үеийн вэб технологиудыг гүнзгийрүүлэн сонирхон судалдаг.</p>
+                <p>Бүтээлч сэтгэлгээтэй, шинэ технологи хурдан суралцах чадвартай ба багаар болон бие даан ажиллах эрмэлзэлтэй.</p>
+            </section>
+
+            <!-- Эзэмшсэн чадварууд -->
+            <section>
+                <h2>Эзэмшсэн чадвар & Технологиуд</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Front-End</h3>
+                        <p>HTML5, CSS3, JavaScript үндэс</p>
+                    </div>
+                    <div class="card">
+                        <h3>Программчлал</h3>
+                        <p>Java, C / C++ хэлний суурь логик</p>
+                    </div>
+                    <div class="card">
+                        <h3>Хэрэгслүүд</h3>
+                        <p>Git, GitHub, VS Code, Linux</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Боловсрол -->
+            <section>
+                <h2>Боловсрол</h2>
+                <ul>
+                    <li><strong>Шинжлэх Ухаан Технологийн Их Сургууль (ШУТИС)</strong> — Программ хангамжийн бакалавр (2024 - Одоог хүртэл)</li>
+                </ul>
+            </section>
+
+            <!-- Сонирхол & Хобби -->
+            <section>
+                <h2>Сонирхол & Хобби</h2>
+                <ul>
+                    <li>Вэб болон ширээний програм хөгжүүлэлт</li>
+                    <li>Волейбол тоглох, спорт ба тулааны урлаг сонирхох</li>
+                    <li>Компьютерийн тоглоом болон логик бодлого бодох</li>
+                </ul>
+            </section>
+
+            <!-- Холбоо барих -->
+            <section>
+                <h2>Холбоо барих</h2>
+                <p>Миний хөгжүүлж буй төслүүд болон кодуудтай танилцахыг хүсвэл доорх холбоосоор зочлоорой:</p>
+                <br>
+                <a href="https://github.com" target="_blank" class="btn">GitHub Профайл Харах</a>
+            </section>
+
+        </div>
+
+        <!-- Хөл хэсэг / Footer -->
+        <footer>
+            <p>&copy; 2026 Өсөхбаяр. Бүх эрх хуулиар хамгаалагдсан.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
