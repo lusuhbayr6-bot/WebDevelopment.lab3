@@ -4,49 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бүртгэлийн Форм</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <!-- 1. Семантик бүтэц: HEADER -->
     <header>
         <h1>Хэрэглэгчийн Бүртгэлийн Хэсэг</h1>
     </header>
 
-    <!-- 1. Семантик бүтэц: MAIN -->
     <main>
         <section>
             <h2>Бүртгэлийн форм</h2>
             <form action="#" method="POST">
                 
-                <!-- Нэр (Input type="text") -->
                 <div>
                     <label for="username">Бүрэн нэр:</label><br>
                     <input type="text" id="username" name="username" required pattern="[A-Za-zА-Яа-яӨөҮү\s]{2,50}" title="Зөвхөн үсэг ашиглана уу (хаяж 2 үсэг)">
                 </div>
                 <br>
 
-                <!-- Имэйл (Input type="email") -->
                 <div>
                     <label for="user-email">Имэйл хаяг:</label><br>
                     <input type="email" id="user-email" name="user_email" required placeholder="example@mail.com">
                 </div>
                 <br>
 
-                <!-- Нууц үг (Input type="password") -->
                 <div>
                     <label for="user-password">Нууц үг:</label><br>
                     <input type="password" id="user-password" name="user_password" required pattern=".{8,}" title="Нууц үг хамгийн багадаа 8 тэмдэгт байх ёстой">
                 </div>
                 <br>
-
-                <!-- Төрсөн огноо (Input type="date") -->
                 <div>
                     <label for="birth-date">Төрсөн огноо:</label><br>
                     <input type="date" id="birth-date" name="birth_date" required>
                 </div>
                 <br>
 
-                <!-- Хүйс (Input type="radio") -->
                 <div>
                     <label>Хүйс:</label><br>
                     <input type="radio" id="gender-male" name="gender" value="male" required>
@@ -57,21 +50,13 @@
                 </div>
                 <br>
 
-                <!-- Сонирхол (Input type="checkbox") -->
                 <div>
                     <label>Сонирхол:</label><br>
-                    <input type="checkbox" id="hobby-sports" name="hobbies" value="sports">
-                    <label for="hobby-sports">Спорт</label>
+                    <input type="hobby" id="hobby" name="hobbies" required placeholder="заавал биш">
 
-                    <input type="checkbox" id="hobby-reading" name="hobbies" value="reading">
-                    <label for="hobby-reading">Ном унших</label>
-
-                    <input type="checkbox" id="hobby-coding" name="hobbies" value="coding">
-                    <label for="hobby-coding">Програмчлал</label>
                 </div>
                 <br>
 
-                <!-- Боловсрол (Select drop-down) -->
                 <div>
                     <label for="education-level">Боловсролын түвшин:</label><br>
                     <select id="education-level" name="education_level" required>
@@ -83,14 +68,12 @@
                 </div>
                 <br>
 
-                <!-- Илгээх товч -->
                 <button type="submit">Бүртгүүлэх</button>
 
             </form>
         </section>
     </main>
 
-    <!-- 1. Семантик бүтэц: FOOTER -->
     <footer>
         <p>&copy; 2026 Бүх эрх хуулиар хамгаалагдсан.</p>
     </footer>
