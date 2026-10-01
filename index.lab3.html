@@ -9,7 +9,7 @@
 <body>
 
     <header>
-        <h1>Хэрэглэгчийн Бүртгэлийн Хэсэг</h1>
+        <h1>Хэрэглэгчийн Бүртгэлийн Систем</h1>
     </header>
 
     <main>
@@ -19,7 +19,7 @@
                 
                 <div>
                     <label for="username">Бүрэн нэр:</label><br>
-                    <input type="text" id="username" name="username" required pattern="[A-Za-zА-Яа-яӨөҮү\s]{2,50}" title="Зөвхөн үсэг ашиглана уу (хаяж 2 үсэг)">
+                    <input type="text" id="username" name="username" required pattern="[A-Za-zА-Яа-яӨөҮү\s]{2,50}" title="Зөвхөн үсэг ашиглана уу" placeholder="">
                 </div>
                 <br>
 
@@ -30,10 +30,27 @@
                 <br>
 
                 <div>
+                    <label for="user-phone">Утасны дугаар:</label><br>
+                    <input 
+                        type="tel" 
+                        id="user-phone" 
+                        name="user_phone" 
+                        placeholder="88112233" 
+                        maxlength="8" 
+                        pattern="[0-9]{8}" 
+                        inputmode="numeric"
+                        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                        title="Яг 8 оронтой тоо оруулна уу"
+                        required>
+                </div>
+                <br>
+
+                <div>
                     <label for="user-password">Нууц үг:</label><br>
                     <input type="password" id="user-password" name="user_password" required pattern=".{8,}" title="Нууц үг хамгийн багадаа 8 тэмдэгт байх ёстой">
                 </div>
                 <br>
+
                 <div>
                     <label for="birth-date">Төрсөн огноо:</label><br>
                     <input type="date" id="birth-date" name="birth_date" required>
@@ -51,26 +68,41 @@
                 <br>
 
                 <div>
-                    <label>Сонирхол:</label><br>
-                    <input type="hobby" id="hobby" name="hobbies" required placeholder="заавал биш">
-
+                    <label for="hobby">Сонирхол / Хобби:</label><br>
+                    <input type="text" id="hobby" name="hobbies" placeholder="Спорт, програмчлал г.м (заавал биш)">
                 </div>
                 <br>
 
                 <div>
                     <label for="education-level">Боловсролын түвшин:</label><br>
                     <select id="education-level" name="education_level" required>
-                        <option value="">--Сонгоно уу--</option>
+                        <option value="">-- Сонгоно уу --</option>
                         <option value="highschool">Бүрэн дунд</option>
                         <option value="bachelor">Бакалавр</option>
                         <option value="master">Магистр</option>
+                        <option value="doctorate">Доктор</option>
                     </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="bio">Товч танилцуулга:</label><br>
+                    <textarea id="bio" name="user_bio" rows="3" placeholder="Өөрийн тухай товч бичнэ үү..."></textarea>
+                </div>
+                <br>
+
+                <div>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Үйлчилгээний нөхцөлийг зөвшөөрч байна</label>
                 </div>
                 <br>
 
                 <button type="submit">Бүртгүүлэх</button>
 
             </form>
+
+            <br>
+            <p>Эндээс мэдээлэл авах бол <a href="https://github.com/lusuhbayr6-bot/WebDevelopment.lab3" target="_blank">GitHub репозитор руу зочлох</a> боломжтой.</p>
         </section>
     </main>
 
